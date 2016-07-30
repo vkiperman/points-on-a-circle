@@ -1,0 +1,23 @@
+<div class="overlay">test</div>
+
+
+<div class="z2">
+	<h2>
+		Circle with <input ng-model="total" type="number" ng-style="totalWidth" string-to-number /> points.
+		<br>
+		<input ng-model="total" type="range" min="1" max="120" />
+
+	</h2>
+	<h2>
+		Circle radius = <input ng-model="radius" type="number" ng-style="radiusWidth" ng-bind="radius" string-to-number />.
+		<br>
+		<input ng-model="radius" type="range" min="10" max="400" />
+	</h2>
+	<h2>Offset {{total*rotation2Number()|number:2}}<br>
+		<input ng-model="rotationTransform" type="range" min="0" max="100" step="{{100/total/20}}" />
+	</h2>
+	<h3>Circle center = ({{xCenter}}, {{yCenter}}).</h3>
+
+	<div ng-repeat="point in points" ng-style="point" class="point"></div>
+	<div ng-repeat="outerPoint in outerPoints track by $index" ng-style="outerPoint" class="pointNumber" ng-bind="1+$index"></div>
+</div>

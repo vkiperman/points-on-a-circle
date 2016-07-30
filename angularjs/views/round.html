@@ -1,0 +1,20 @@
+@{meta('Round', 'round', 'ng angularjs')}
+
+<!-- /app/css/ -->
+@{ngStyle('app')}
+
+<!-- cdnjs -->
+@{ngLocale('en-us')}
+
+<!-- /app/controllers/ -->
+@{ngController('round')}
+
+<!-- /app/directives/ -->
+@{ngDirective('round')}
+
+<div ng-controller="RoundCtrl">
+	<round-directive></round-directive>
+</div>
+
+
+@{ngTemplate('round')}
