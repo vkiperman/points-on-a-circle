@@ -5,7 +5,7 @@ exports.install = function() {
 
 function view_app() {
 	var self = this;
-	self.view('app');
+	self.view('round');
 }
 
 function view_round() {
